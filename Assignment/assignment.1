@@ -1,0 +1,137 @@
+CHAPTER 1: AN OVERVIEW OF THE INTERNET AND THE WEB
+
+Group A: Short Questions (2 Marks)
+1. Define the term ”Protocol” in the context of the Internet.
+A protocol is a set of rules and standards that determine how data is sent, received, and interpreted between devices on the
+ Internet.
+Protocols ensure that computers can communicate correctly, even if they use different hardware or software.
+
+2. What is the primary difference between a Web Browser and a Search Engine?
+           Web Browser	                                                                 Search Engine
+A software application used to access and display web pages	        A web service used to find information on the Internet
+It works on your device	                                            It works online
+It opens websites using URLs	                                    It searches websites using keywords
+Examples: Chrome, Firefox, Edge	                                    Examples: Google, Bing, DuckDuckGo
+
+3. Define the World Wide Web (WWW).
+World Wide Web (WWW) is a system of interconnected web pages and websites that can be accessed through the Internet using a
+web browser.
+It uses hyperlinks to connect documents and mainly works with the HTTP/HTTPS protocol.
+
+Distinguish between a static web page and a dynamic web page.
+Static Web Page                         Dynamic Web Page                                  
+ In static content is fixed          In dynamic content changes                               
+Same for all users                   Different for different users                      
+Uses only HTML and CSS               Uses HTML, CSS, JavaScript, server-side languages 
+No database connection               Connected to a database                           
+Example: Personal portfolio          Example: Facebook, Online banking  
+
+Group B: Long Questions (4 Marks)
+5. Explain the client-server architecture of the web with a neat diagram.
+The client-server architecture of the web is a system where a client (typically a web browser) sends a request for resources 
+or services to a server, which processes the request and sends the data back to the client . This interaction is the 
+foundation of how the internet works, dividing responsibilities between the requester and the provider of information. 
+ 
+ Key Component 
+Client: The client is a software application that initiates communication with the server. Common examples include web 
+browsers (like Chrome,Firefox, or Safari), which run on devices such as desktop computers, laptops, smartphones, or tablets. 
+The client is responsible for formatting he request, sending it to the server, and rendering the response for the user.
+
+Server: The server is a powerful computer or system of computers running specialized software (like Apache, Nginx, or
+ Microsoft IIS) that manages network resources and responds to client requests [1]. Servers store websites, databases, and
+application logic. 
+
+6. Describe the functions of the following Internet services: Email, FTP, and VoIP.
+i.Email (Electronic Mail)
+-Email allows users to send and receive messages electronically over the Internet.
+-Messages can include text, images, attachments, and documents.
+-It provides a way for fast, reliable, and asynchronous communication,
+meaning the sender and receiver do not need to be online at the same time.
+ Examples: Gmail, Yahoo Mail, Outlook.
+
+ii.FTP (File Transfer Protocol)
+-FTP is used to transfer files between a client and a server over the Internet.
+-It allows users to upload files to a server (e.g., website files) or download files from a server.
+ Examples: Uploading website content to a hosting server, downloading software updates.
+
+iii.VoIP (Voice over Internet Protocol)
+-VoIP allows users to make voice calls using the Internet instead of traditional telephone lines.
+-It converts voice signals into digital data packets and transmits them over the network.
+ Examples: Skype, Zoom, WhatsApp calls.
+
+4.”The Internet is a network of networks.” Elaborate on this statement explaining how packet switching works.
+The statement “The Internet is a network of networks” means that the Internet is not a single network, but a global system 
+formed by connecting many smaller networks such as home networks, school networks, corporate networks, Internet Service 
+Providers (ISPs), and backbone networks. These independent networks are interconnected using common protocols, mainly TCP/IP,
+ allowing devices worldwide to communicate with each other.
+ 
+Packet Switching Work by the folling point:-
+-Segmentation: A message, file, or request (like a webpage download) is broken down into smaller pieces (packets) by the 
+sending device.
+-Addressing : Each packet is given a header containing essential information: the source IP address, the destination IP address,
+the total number of packets in the message, and the sequence number of that specific packet .
+-Transmission and Routing : The packets are then transmitted across the network, traveling independently .Router along the way 
+read the destination address in each packet's header and use complex algorithms to determine the most efficient path for
+that moment. This means that different packets from the same message may take completely different physical routes across the 
+Internet.
+-Reassembly : Once the packets arrive at their destination, the receiving device uses the sequence numbers to eorder them correctly.
+
+Group C: Scenario-Based Questions (5 Marks)
+8. A startup company wants to host a website that displays the same information to allvisitors and requires very low
+maintenance costs. However, they are being advised to usea dynamic website. As a consultant, would you agree? Justify your 
+answer.
+ I would disagree with the advice to use a dynamic website for a startup with the specified needs. A static website is the best
+Every visitor sees the same pages, which makes a static site ideal for basic information such as company details, services, contact
+information, and announcements. In contrast, a dynamic website is used when content needs to change frequently or be customized for
+different users, which is not required in this case.
+
+Reasons.
+Static website 
+-It consist of fixed HTML poges that showidentical content to every visitor.
+-They are cheaper to develop and  host since no server side processing or database are required.
+-Maintenance is minimal because there is no backad logic, database, os frequent update. 
+-It's facter and more sexure due to server side script.
+-It is suitable for startups, company profiles, and informational websites.
+
+Dynamic Website 
+-It displays different or updated content based on users or data.
+-It content is generated at runtime.
+-It uses server-side programming (PHP, Python, Node.js, etc.)..
+-It requires regular updates and security management.
+-Its suitable for e-commerce websites, blogs, and web applications.
+
+9.A user types www.google.com into their browser, but the browser displays a ”Server Not Found” error, even though the internet connection
+is active. However, accessing the site via 142.250.190.46 works. Diagnose the problem and explain the underlying technology that failed.
+The problem is a failure in the Domain Name System (DNS). While our internet connection is active, our browser cannot translate 
+human-readable domain name (www.google.com) into the numerical IP address (142.250.190.46) necessary for communication.
+
+The failure is confirmed because:
+Accessing the site by its IP address (142.250.190.46) works, meaning the Google server is operational and your internet connection is 
+functional.
+Accessing the site by its domain name (www.google.com) fails, indicating the step of finding that IP address from the name is not working 
+
+The underlying technology that failed are :-
+-Local DNS Cache Issue: Our computer might have outdated or corrupted DNS information stored locally.
+-ISP's DNS Server is Down or Misconfigured: The DNS server provided by your ISP may be experiencing a temporary outage or configuration
+ error .
+- Network Configuration Errors: Problems with your router or firewall settings might be blocking DNS traffic.
+- Malware or Security Software: Sometimes, security software or malware can interfere with DNS requests, potentially redirecting them or
+  blocking them entirely. 
+
+10. A multinational corporation wants to share sensitive inventory data with specific suppliers but does not want this information
+available to the general public. Explain which network type (Intranet, Extranet, or Internet) they should implement and why
+An Extranet is the most suitable network type for this situation because it is designed specifically for secure collaboration with 
+external organizations.
+In a multinational corporation, inventory data is sensitive and should not be visible to the general public. At the same time, 
+suppliers need access to this data so they can plan production, deliveries, and restocking. An Extranet solves this problem by 
+extending the company’s internal network to selected external users only. 
+An Extranet works by this way:
+-It is built on the company’s Intranet but opens limited access to trusted partners.
+- It suppliers log in through secure authentication (usernames, passwords, certificates, or VPNs).
+-ItAccess is restricted to specific data and applications, such as inventory levels, orders, or shipment status.
+-It security measures like firewalls, encryption, and access control ensure data protection.
+
+Extranet is better  than Internet and Intranet:
+Intranet: Too restrictive—only employees can access it, so suppliers would be excluded.
+Internet: Too open—anyone could access the information, creating serious security risks.
+
