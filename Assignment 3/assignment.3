@@ -1,0 +1,214 @@
+Group A: Short Questions (2 Marks)
+1. Define Information Architecture (IA).
+Information Architecture (IA) is the process of organizing, structuring, and labeling 
+website content so that users can easily find and understand information.
+It focuses on navigation, menus, categories, and content hierarchy.
+
+2. What is a “Wireframe”?
+A wireframe is a basic visual blueprint of a website that shows the layout and placement 
+of elements like headers, menus, content areas, and buttons without colors or images.
+It helps designers plan structure before actual development.
+
+3. Explain the concept of “Cognitive Friction” in web design.
+Cognitive friction refers to the mental effort required by users when a website is 
+confusing, cluttered, or difficult to navigate.
+High cognitive friction makes users feel frustrated and increases bounce rate.
+
+4. Why should URL slugs use hyphens instead of underscores?
+Hyphens (-) are preferred because search engines treat hyphens as word separators, while underscores (_) are not.
+Example:
+web-design-basics (Good for SEO)
+web_design_basics (Poor readability & SEO)
+
+Group B:Long Questions (4 Marks)
+5. Compare and contrast Hierarchical (Tree) structure and Linear (Sequential) structure
+Hierarchical (Tree) Structure
+The hierarchical structure organizes a website in a top-down manner, where the home page
+is the root and other pages are arranged as main categories and sub-categories. Users can
+move freely between sections using menus and links. This structure is ideal for large 
+and complex websites.
+Characteristics:
+Clear parent–child relationship
+Easy to expand (scalable)
+Supports multiple navigation paths
+Good for information-heavy websites
+Example:
+A University website where the Home page leads to Admissions, Departments, Library, 
+Alumni, etc., and each department has its own sub-pages.
+
+Linear (Sequential) Structure
+The linear structure presents content in a fixed order, where users must follow one step
+after another. Navigation is controlled, and skipping steps is usually not allowed. This 
+structure is best for task-based or instructional websites.
+Characteristics:
+Step-by-step navigation
+Simple and guided flow
+Less user control
+Not suitable for large websites
+Example:
+An online examination system or checkout process where users must complete one step before
+moving to the next.
+
+Comparison Table:
+Basis	          Hierarchical Structure	      Linear Structure
+Navigation	         Multiple paths              	Single path
+User freedom	     High	                        Low
+Website size	     Large websites	                Small / task-based
+Flexibility	         High	                        Limited   
+
+6. Explain the “Three-Click Rule” and its significance in UX design
+
+The Three-Click Rule states that a user should be able to find any information on a website 
+within three clicks. If users take more than three clicks, they may feel confused, frustrated, 
+or lose interest.
+
+Importance in UX Design:
+Reduces cognitive friction
+Improves ease of use
+Saves user time
+Increases user satisfaction
+Decreases bounce rate
+
+Example:
+If a student wants to find admission requirements, it should be reachable within three 
+clicks:
+Home → Admissions → Requirements
+This rule encourages designers to build clear menus, logical structure, and efficient 
+navigation.
+
+7. “Plan before you do.” How Card Sorting and Flowcharts help in planning a website’s structure
+Card Sorting
+Card sorting is a technique where content items are written on cards, and users are asked 
+to group them in a way that makes sense to them.
+
+How it helps:
+Reveals how users think
+Helps create logical categories
+Improves menu labeling
+Reduces user confusion
+Example:
+Users may group “Courses”, “Departments”, and “Faculty” under “Academics”.
+
+Flowcharts
+Flowcharts are visual diagrams that show how users move from one page to another on a 
+website.
+
+How it helps:
+Shows navigation paths clearly
+Identifies unnecessary steps
+Improves user journey
+Helps developers and designers understand structure
+
+Conclusion:
+By using card sorting and flowcharts, designers can plan the website structure properly 
+before development, resulting in a simple, organized, and user-friendly website.
+
+8. You are designing a website for a University. It has hundreds of pages (Admissions, 
+Departments, Alumni, News). Which structural model would you choose? Draw a rough
+For a university website with hundreds of pages like Admissions, Departments, Alumni, News,
+the best structural model is usually a Hierarchical (Tree) Structure
+
+It's is important because of:
+Clear organization: Pages are grouped into main categories (like Admissions, Departments, Alumni).
+Easy navigation: Users can start from the homepage and drill down to subpages.
+Scalability: New departments or sections can easily be added without breaking the structure.
+Example: Homepage → Admissions → Undergraduate → Application Process
+
+Homepage
+│
+├── Admissions
+│    ├── Undergraduate
+│    ├── Postgraduate
+│    └── International Students
+│
+├── Departments
+│    ├── Computer Science
+│    │    ├── Faculty
+│    │    └── Research
+│    ├── Physics
+│    └── Mathematics
+│
+├── Alumni
+│    ├── Alumni Events
+│    └── Alumni Stories
+│
+├── News & Events
+│    ├── University News
+│    └── Upcoming Events
+│
+└── Contact Us
+
+9. A user visits a website but leaves within 10 seconds because they cannot find the navigation menu, 
+which is hidden behind a small icon on a desktop screen. Analyze this design failure using the ”KISS” 
+(Keep It Simple) principle.
+Scenario Recap
+
+User visits a website.
+Navigation menu is hidden behind a small icon (like a hamburger menu).
+On a desktop screen, this is unexpected.
+User leaves within 10 seconds.
+KISS Principle
+KISS = Keep It Simple, Stupid (or "Keep It Simple and Straightforward")
+The idea: avoid unnecessary complexity in design.
+Users should understand and use the interface immediately without confusion.
+Analysis of Design Failure
+Unnecessary Complexity
+Hiding the navigation menu behind a small icon adds extra cognitive effort.
+On desktop screens, users expect visible menus, not hidden ones.
+
+Poor Usability
+Users couldn’t easily find what they were looking for.
+Frustration causes high bounce rate (leaving within 10 seconds).
+
+Violation of KISS
+The interface is not simple or intuitive.
+Keeping the navigation visible on desktops would have kept it simple.
+
+Impact
+Website loses visitors.
+User experience suffers.
+Potentially reduces conversions or engagement.
+How to Fix (Following KISS)
+Show the full navigation menu on desktops instead of hiding it.
+Only use collapsible menus on mobile screens where space is limited.
+Make important elements easy to find and use.
+
+10. An e-commerce website has a URL structure like www.shop.com/prod?id=55&cat=9. Explain 
+why this is bad for both users and Search Engines (SEO), and propose a better structure using 
+Page Slugs
+For Users:
+Unreadable & Confusing: Users cannot understand what the page is about just by looking at the URL. prod?id=55&cat=9 tells nothing about the product.
+Difficult to Remember or Share: URLs with parameters like ?id=55&cat=9 are hard to memorize or share.
+Poor Trust: Users may feel uncertain about clicking a link with strange codes.
+
+
+For Search Engines (SEO):
+
+Unfriendly for Crawling: Search engines prefer URLs that describe the page content. Parameter-heavy URLs are harder 
+for crawlers to index properly.
+No Keywords: This URL does not include any relevant keywords like product name or category, which reduces SEO effectiveness.
+Duplicate Content Risk: URLs with different parameters could point to the same product, creating duplicate content issues.
+
+Better Structure Using Page Slugs
+Page slugs are the readable part of the URL, typically derived from the product name or category.
+A better URL structure is:
+www.shop.com/electronics/smartphone-iphone-14
+
+Explanation:
+
+
+electronics → Category of the product
+
+
+smartphone-iphone-14 → Product name as a slug
+
+
+Benefits:
+
+User-Friendly: Easy to read, understand, and share.
+SEO-Friendly: Includes keywords (smartphone, iPhone 14), which improves search engine ranking.
+Clean & Simple: No confusing parameters, reduces cognitive friction.
+
+
+
+
